@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PDE_Saludo_Sensores</string>
+    <string name="primary_activity_label">Contact Manager</string>
+    <string name="sensor_activity_label">Sensor Manager</string>
+    <string name="arrow_description">Flecha que apunta al norte</string>
+
+</resources>
