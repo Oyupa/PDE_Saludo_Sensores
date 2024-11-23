@@ -44,8 +44,9 @@ Esta es una aplicación interactiva que permite a los usuarios gestionar contact
 
 3. **Widget de contactos**:
     - Ve a la pantalla de inicio de tu dispositivo.
-    - Agrega el widget "Lista de Contactos" desde el menú de widgets. No tiene perdida.
+    - Agrega el widget "Lista de Contactos" desde el menú de widgets.
     - El widget mostrará la lista más reciente de contactos.
+    - Hasta mi abuela sabe hacerlo
 
 ---
 
