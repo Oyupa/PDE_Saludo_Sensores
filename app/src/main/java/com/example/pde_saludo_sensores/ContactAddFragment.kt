@@ -32,10 +32,12 @@ class ContactAddFragment : Fragment() {
 
             if (name.isNotBlank() && phone.isNotBlank() && email.isNotBlank()) {
                 viewModel.addContact(Contact(name, phone, email))
+                (activity as? PrimaryActivity)?.saveContactToPreferences(name)
                 requireActivity().supportFragmentManager.popBackStack()
             }
         }
 
         return view
     }
+
 }

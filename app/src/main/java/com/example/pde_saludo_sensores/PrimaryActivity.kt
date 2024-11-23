@@ -1,5 +1,8 @@
 package com.example.pde_saludo_sensores
 
+import android.appwidget.AppWidgetManager
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -24,5 +27,22 @@ class PrimaryActivity : AppCompatActivity() {
                 .addToBackStack(null)
                 .commit()
         }
+    }
+    fun saveContactToPreferences(contactName: String) {
+        val sharedPreferences = getSharedPreferences("ContactsWidgetPrefs", Context.MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+
+        // Recuperar contactos existentes y agregar el nuevo
+        val contacts = sharedPreferences.getStringSet("contacts", mutableSetOf()) ?: mutableSetOf()
+        contacts.add(contactName)
+
+        editor.putStringSet("contacts", contacts)
+        editor.apply()
+
+        // Notificar al widget que los datos han cambiado
+        val intent = Intent(this, ContactsWidgetProvider::class.java).apply {
+            action = AppWidgetManager.ACTION_APPWIDGET_UPDATE
+        }
+        sendBroadcast(intent)
     }
 }
