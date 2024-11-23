@@ -54,7 +54,7 @@ Esta es una aplicación interactiva que permite a los usuarios gestionar contact
 1. **Navegar con la flecha**:
     - Abre la pantalla de sensores.
     - La flecha apuntará automáticamente a alguna parte en función de la posición del teléfono.
-    - La mejor manera de probar esta funcionalidad es poner los parámetros del campo magnético a (0,10,10) y los ejes en: 60º el 'X', 0º el 'Y' y rotar el eje 'Z' viendo como se meuve la brújula.
+    - La mejor manera de probar esta funcionalidad es poner los parámetros del campo magnético a (0,10,10) y los ejes en: 60º el 'X', 0º el 'Y' y rotar el eje 'Z' viendo como se mueve la brújula.
     - También se le puede hacer cambiar de color cambiando los valores del sensor de luz.
 
 
